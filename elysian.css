@@ -2,7 +2,7 @@
 
 /* Background and Overall Layout */
 body {
-    background: #0d131a url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt_gZexi3IGCiEs2M0r62P5HeiZI8Qddk7W9Idi1IFz2ky-hhv') fixed center/cover !important;
+    background: #0d131a url('https://gstatic.com') fixed center/cover !important;
     color: #e2f1ff !important;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -14,6 +14,9 @@ body {
     border-radius: 12px !important;
     box-shadow: 0px 0px 25px rgba(99, 169, 230, 0.3) !important;
     padding: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 /* Headers & Banners */
@@ -72,20 +75,17 @@ a:hover, a:active {
     border-radius: 5px;
     border: 1px solid #3d6385;
 }
-/* 🛠️ FORCE CLEAR THE ACTIVITY BUTTON BACKING BLOCK */
-.subnav, 
-.subnav_container, 
-table.subnav, 
-div.subnav {
 
-    /* 🛑 CRUSH THE REMAINING TOP GREY-GREEN BACKING BLOCK */
+/* 🛑 CRUSH THE REMAINING TOP GREY-GREEN BACKING BLOCK */
 .breadtop,
 .breadcrumb-container,
+.breadcrumb,
 div[style*="background-color: #92a2a2"],
 div[style*="background-color: #a3b3b3"] {
     background: rgba(13, 22, 33, 0.6) !important;
     background-color: rgba(13, 22, 33, 0.6) !important;
-    border-color: #253d56 !important;
+    border: 1px solid #253d56 !important;
+    color: #d1e7ff !important;
 }
 
 /* Force the activity link container itself to go transparent blue */
@@ -96,6 +96,11 @@ div[style*="background-color: #a3b3b3"] {
     background-color: rgba(13, 22, 33, 0.6) !important;
 }
 
+/* 🛠️ FORCE CLEAR THE ACTIVITY BUTTON BACKING BLOCK */
+.subnav, 
+.subnav_container, 
+table.subnav, 
+div.subnav {
     background: rgba(13, 22, 33, 0.6) !important;
     background-color: rgba(13, 22, 33, 0.6) !important;
     border: 1px solid #253d56 !important;
