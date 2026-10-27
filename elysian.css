@@ -72,3 +72,17 @@ a:hover, a:active {
     border-radius: 5px;
     border: 1px solid #3d6385;
 }
+/* 🛠️ FORCE CLEAR THE ACTIVITY BUTTON BACKING BLOCK */
+.subnav, 
+.subnav_container, 
+table.subnav, 
+div.subnav {
+    background: rgba(13, 22, 33, 0.6) !important;
+    background-color: rgba(13, 22, 33, 0.6) !important;
+    border: 1px solid #253d56 !important;
+}
+
+/* Fixes the text links inside that bar so they don't vanish */
+.subnav a, .subnav a:link, .subnav a:visited {
+    color: #5ec2ff !important;
+}
