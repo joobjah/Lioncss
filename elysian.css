@@ -76,37 +76,42 @@ a:hover, a:active {
     border: 1px solid #3d6385;
 }
 
-/* 🛑 CRUSH THE REMAINING TOP GREY-GREEN BACKING BLOCK */
+/* 🛑 OVERWRITE NATIVE GREY NAVIGATION SECTIONS */
 .breadtop,
 .breadcrumb-container,
 .breadcrumb,
+.breadcrumb > li,
 div[style*="background-color: #92a2a2"],
 div[style*="background-color: #a3b3b3"] {
-    background: rgba(13, 22, 33, 0.6) !important;
-    background-color: rgba(13, 22, 33, 0.6) !important;
-    border: 1px solid #253d56 !important;
-    color: #d1e7ff !important;
+    background: rgba(13, 22, 33, 0.7) !important;
+    background-color: rgba(13, 22, 33, 0.7) !important;
+    border: 1px solid #3d6385 !important;
+    color: #e2f1ff !important;
 }
 
-/* Force the activity link container itself to go transparent blue */
+/* Force specific handling for the inner sub-navigation containers */
 .breadtop + div, 
 .breadtop + table,
-.breadcrumb-container + div {
-    background: rgba(13, 22, 33, 0.6) !important;
-    background-color: rgba(13, 22, 33, 0.6) !important;
+.breadcrumb-container + div,
+.chatter_nav,
+.board-nav {
+    background: rgba(13, 22, 33, 0.7) !important;
+    background-color: rgba(13, 22, 33, 0.7) !important;
+    border-color: #253d56 !important;
 }
 
-/* 🛠️ FORCE CLEAR THE ACTIVITY BUTTON BACKING BLOCK */
+/* 🛠️ WIPE OUT THE GREY AREA BEHIND THE ACTIVITY BUTTONS */
 .subnav, 
 .subnav_container, 
 table.subnav, 
-div.subnav {
-    background: rgba(13, 22, 33, 0.6) !important;
-    background-color: rgba(13, 22, 33, 0.6) !important;
-    border: 1px solid #253d56 !important;
+div.subnav,
+.subnav-btn {
+    background: rgba(13, 22, 33, 0.8) !important;
+    background-color: rgba(13, 22, 33, 0.8) !important;
+    border: 2px solid #3d6385 !important;
 }
 
-/* Fixes the text links inside that bar so they don't vanish */
-.subnav a, .subnav a:link, .subnav a:visited {
+/* Ensure sub-navigation text links contrast perfectly */
+.subnav a, .subnav a:link, .subnav a:visited, .breadcrumb a {
     color: #5ec2ff !important;
 }
