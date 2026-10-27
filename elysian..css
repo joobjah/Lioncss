@@ -1,0 +1,74 @@
+/* --- 9.6.19 ELYSIAN RLC AUCTION FORUM THEME --- */
+
+/* Background and Overall Layout */
+body {
+    background: #0d131a url('https://unsplash.com') fixed center/cover !important;
+    color: #e2f1ff !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Central Thread Container */
+.container.main, .table {
+    background: rgba(13, 22, 33, 0.85) !important;
+    border: 2px solid #3d6385 !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 0px 25px rgba(99, 169, 230, 0.3) !important;
+    padding: 20px !important;
+}
+
+/* Headers & Banners */
+h1, h2, h3, .panel-heading, th, .topbar {
+    background: linear-gradient(135deg, #101f30 0%, #203a56 100%) !important;
+    color: #8cd0ff !important;
+    border-bottom: 2px solid #4a7fa1 !important;
+    text-shadow: 0px 0px 8px rgba(140, 208, 255, 0.6) !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Links & Accents */
+a:link, a:visited {
+    color: #5ec2ff !important;
+    text-decoration: none !important;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover, a:active {
+    color: #ffffff !important;
+    text-shadow: 0px 0px 10px #5ec2ff !important;
+}
+
+/* Highlighted Text / Alert Boxes */
+.alert, .well, .bidding-box {
+    background: rgba(20, 38, 59, 0.9) !important;
+    border: 1px solid #4a7fa1 !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+}
+
+/* Table Rows (Alternating Forum Rows) */
+.left, .right, td, .tr {
+    background: rgba(18, 30, 46, 0.5) !important;
+    border-color: #253d56 !important;
+    color: #d1e7ff !important;
+}
+
+/* Progress Bars & Accent Lines */
+.progress-bar {
+    background-color: #3d7ca3 !important;
+    background-image: linear-gradient(45deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0d131a;
+}
+::-webkit-scrollbar-thumb {
+    background: #203a56;
+    border-radius: 5px;
+    border: 1px solid #3d6385;
+}
