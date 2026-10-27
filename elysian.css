@@ -77,6 +77,25 @@ a:hover, a:active {
 .subnav_container, 
 table.subnav, 
 div.subnav {
+
+    /* 🛑 CRUSH THE REMAINING TOP GREY-GREEN BACKING BLOCK */
+.breadtop,
+.breadcrumb-container,
+div[style*="background-color: #92a2a2"],
+div[style*="background-color: #a3b3b3"] {
+    background: rgba(13, 22, 33, 0.6) !important;
+    background-color: rgba(13, 22, 33, 0.6) !important;
+    border-color: #253d56 !important;
+}
+
+/* Force the activity link container itself to go transparent blue */
+.breadtop + div, 
+.breadtop + table,
+.breadcrumb-container + div {
+    background: rgba(13, 22, 33, 0.6) !important;
+    background-color: rgba(13, 22, 33, 0.6) !important;
+}
+
     background: rgba(13, 22, 33, 0.6) !important;
     background-color: rgba(13, 22, 33, 0.6) !important;
     border: 1px solid #253d56 !important;
